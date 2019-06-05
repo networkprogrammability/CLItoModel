@@ -1,0 +1,16 @@
+This exercise demonstrates how to configiure a device using YDK usingcisco-ios-xr objects
+
+This exercise code connect to router using 
+- ip:   198.18.1.11
+- port: 830
+- ssh
+
+Usage:
+For help:
+	python exercise4.py -h 
+Example usage:
+ python exercise4.py 
+Example usage with verbose:
+	python exercise4.py -v 
+
+

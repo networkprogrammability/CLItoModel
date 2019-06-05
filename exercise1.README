@@ -1,0 +1,23 @@
+This demonstrates a workflow about how to explore the config knobs and hierarchy over CLI and Yang data model using open source tools
+
+Task1: ssh to the management interface of the device
+Step1: open an terminal by clicking on "devbox-ssh"
+Step1: run command "ssh admin@198.18.1.11"
+Step2: enter password as "admin"
+
+
+Task2: Verify that login is successful and your on router console.
+you should see router prompt as
+RP/0/RP0/CPU0:r1#
+
+
+Task3: Explore the config option on the device
+Step1: enter command 'conf t'
+Step2: enter command ? to see the option
+Step3: enter command 'interface loopback0 ?' to see the suboption
+
+Task4: Explore the model contents via pyang
+Step0: cd ~
+Step1: cd yang
+Step2: run command 'pyang -f tree Cisco-IOS-XR-ifmgr-cfg.yang'
+Step3: Review the hierarchy of config options.

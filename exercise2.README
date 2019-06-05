@@ -1,0 +1,22 @@
+This lab demonstrate a workflow about how to identify which yang models 
+and config knobs are involved the configuration done via CLI.
+
+Typical steps involved are
+
+Task1: ssh to the management interface of the device
+Step1: open an terminal by clicking on "devbox-ssh"
+Step1: run command "ssh admin@198.18.1.12"
+Step2: enter password as "admin"
+
+Task2: Verify that login is successful and your on router console.
+you should see router prompt as 
+RP/0/RP0/CPU0:r2# 
+
+Task3: covert CLI commands text to XML encoding
+Step1: on router prompt, use a show run command with pipe '|' option to convert config to XML form. Run command "show run inerface | xml"
+Step2: review the XML 
+Step3: review the loopback0 instance subtree
+
+ 
+
+

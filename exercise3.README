@@ -1,0 +1,18 @@
+This exercise demonstrates how to configiure a device given nectonf XML encoded data in an file.
+
+This exercise code connect to router using 
+- ip:   198.18.1.11
+- port: 830
+- ssh
+
+Usage:
+For help:
+	python exercise3.py -h 
+Example usage:
+Assuming netconf config XML is present at location data/if_cfg.xml
+	python exercise3.py -x data/if_cfg.xml
+
+Example usage with verbose:
+	python exercise3.py -v -x data/if_cfg.xml
+
+
